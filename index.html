@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker Nepal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="col-xs-12 jumbotron">
+        <h1>Covid-19 Tracker Nepal</h1>
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+            It gives the data about Covid-19 of Nepal according to respective districts.
+        </p>
+      </div>
+      <div class="row">
+    <div class="col-xs-12 nepdata" >
+    <div class="col-xs-12 card" id="one" >
+        <div class="card-body">
+          <h2 class="card-title" id="Tcase">Total cases</h2>
+          <h3 class="card-text" id="tcase"></h3>
+          
+        </div>
+      </div>
+      <div class="col-xs-12 card"  id="two" >
+        <div class="card-body">
+          <h2 class="card-title" id="Tcase">Recovered</h2>
+          <h3 class="card-text" id="trecover"></h3>
+          
+        </div>
+      </div>
+      <div class="col-xs-12 card" id="three" >
+        <div class="card-body">
+          <h2 class="card-title" id="Tcase">Total deaths</h2>
+          <h3 class="card-text" id="tdeaths"></h3>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+<div class="col-xs-12 all">
+    <form class="pure-form">
+        <div class="form-group">
+            <label><h3>Your District : </h3></label>
+            <input style="text-transform: capitalize;" class="form-control input-lg" id="district" type="text" placeholder="Eg : Nawalparasi East"/>
+          </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<h3 >Name : <span id="name"></span>  <span id="nameN"></span></h3>
+<h3>Province : <span id="pru"></span></h3>
+<h3 >Cases : <span id="cases"></span></h3>
+<h3><em>Active cases : </em><span id="rcase" style="color:blue;"></span></h3>
+<h3><em>Recoveries : </em><span id="Rcase" style="color:green;"></span></h3>
+<h3><em>Deaths : </em><span id="Rdeath" style="color:red;"></span></h3>
+
+
+
+</div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+}
+   .all{
+      padding: 5px;
+      padding-left: 35px;
+      padding-right: 35px;
+      background-color: bisque;   
+   }
+
+   .container{
+       padding-top: 5px;
+       display: flex;
+      flex-direction: column;
+   }
+
+   .nepdata{
+       display: flex;
+       flex-direction: row;
+   }
+
+   #one {
+       background-color: lightblue;
+       width: 350px;
+       margin-right: 20px;
+   }
+   #two {
+       background-color: lightgreen;
+       width: 350px;
+       margin-right: 20px;
+       
+   }
+   #three {
+       background-color: lightsalmon;
+       width: 350px;
+       
+   }
+   #one,#two,#three{
+       height: 150px;
+       padding: 10px;
+       margin-bottom: 10px;
+       border-radius: 10px;
+   }
+
+   #Tcase,#tcase,#trecover,#tdeaths{
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+   }
+   @media only screen and (max-width: 400px) {
+     .nepdata{
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 10px;
+   }
+     #one,#two,#three{
+     width: 100%;
+   }
+   }
